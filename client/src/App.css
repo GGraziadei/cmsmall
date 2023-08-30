@@ -1,0 +1,42 @@
+.login-form {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.below-nav {
+    padding-top: 5rem;
+}
+
+.block-header{
+    color: red;
+    font-family:  'Times New Roman', serif;
+    font-size: 300%;
+}
+
+.block-paragraph{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 200%;
+}
+
+.active {
+    color: black !important;
+    background-color: gainsboro !important;
+}
+
+.scroll{
+    max-height:  88vh;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+.n-scroll{
+    overflow-y:hidden;
+    overflow-x: hidden;
+    max-height:  100vh;
+}
+
+    
+    

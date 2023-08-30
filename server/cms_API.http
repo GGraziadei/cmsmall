@@ -1,0 +1,150 @@
+GET http://localhost:3001/api/users
+
+###
+GET http://localhost:3001/api/settings/title
+
+###
+PUT http://localhost:3001/api/settings/title
+Content-Type: application/json
+
+{
+    "title": "Le 20 spiagge più belle della Sardegna Potenza Picena"
+}
+
+###
+GET http://localhost:3001/api/pages
+
+###
+GET http://localhost:3001/api/pages/12
+
+###
+GET http://localhost:3001/api/pages/filters?filterId=published
+
+###
+GET http://localhost:3001/api/pages/filters?filterId=slug&value=pagina-1
+
+
+### 
+POST http://localhost:3001/api/pages
+Content-Type: application/json
+
+{
+    "title": "Le 20 spiagge più belle Italia",
+    "creationDate": "2023-06-06",
+    "blocks" : [
+        {
+            "type": "header",
+            "content": "Lorem ipsum dolor sit amet - header"
+        }
+    ]
+}
+
+### 
+POST http://localhost:3001/api/pages
+Content-Type: application/json
+
+{
+    "title": "Le 20 spiagge più belle Italia 2",
+    "creationDate": "2023-06-06",
+    "publishDate": "2023-06-06",
+    "blocks" : [
+        {
+            "type": "header",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "paragrafo",
+            "content": "Lorem ipsum dolor sit amet - header"
+        }
+    ]
+}
+
+### 
+POST http://localhost:3001/api/pages
+Content-Type: application/json
+
+{
+    "title": "Le 20 spiagge più belle Italia - blocchi7",
+    "creationDate": "2023-06-06",
+    "publishDate": "2023-06-06",
+    "blocks" : [
+        {
+            "type": "header",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "paragrafo",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "immagine",
+            "content": "/static/images/mountains-g9533a8825_1280.jpg"
+        },
+        {
+            "type": "header",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "paragrafo",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "paragrafo",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "immagine",
+            "content": "/static/images/beach-g10e271efa_1280.jpg"
+        }
+    ]
+}
+
+###
+DELETE  http://localhost:3001/api/pages/16
+
+###
+PUT http://localhost:3001/api/pages/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Le 20 spiagge più belle della Sardegna Potenza Picena",
+    "creationDate": "2023-06-06",
+    "publishDate": "2023-06-06",
+    "authorId": 2,
+    "blocks" : [
+        {
+            "type": "header",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "paragrafo",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "immagine",
+            "content": "/static/images/mountains-g9533a8825_1280.jpg"
+        },
+        {
+            "type": "header",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "paragrafo",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "paragrafo",
+            "content": "Lorem ipsum dolor sit amet - header"
+        },
+        {
+            "type": "immagine",
+            "content": "/static/images/beach-g10e271efa_1280.jpg"
+        }
+    ]
+}
+
+###
+GET http://localhost:3001/api/static
+
+
